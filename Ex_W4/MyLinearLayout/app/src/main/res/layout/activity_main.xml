@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Layout chứa TextView 1 (Màu đỏ) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#FF0000"
+        android:text="1"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Layout ngang chứa 2 phần -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <!-- TextView 2 (Màu vàng) -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#FFD700"
+            android:text="2"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Layout dọc chứa phần còn lại -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- TextView 3 (Màu xanh dương) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="#0099FF"
+                android:text="3"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"/>
+
+            <!-- Layout ngang chứa 4 & 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- TextView 4 (Màu hồng) -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="#FFB6C1"
+                    android:text="4"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"/>
+
+                <!-- TextView 5 (Màu tím) -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="#800080"
+                    android:text="5"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
